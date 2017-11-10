@@ -5,16 +5,15 @@ MAINTAINER axiom88guru(axiom88guru@gmail.com)
 RUN apt-get update
 
 # Install basic packages
-RUN apt-get -qq -y install git curl build-essential openssl libssl-dev python-software-properties python g++ make
-RUN apt-get -qq -y install libsqlite3-dev
-RUN apt-get -qq -y install nodejs
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
 # Install Ruby
 RUN apt-get -qq -y install ruby-full
 RUN gem install bundler --no-ri --no-rdoc
-RUN gem install foreman compass
+RUN gem install foreman
 
 # Install rails-new-docker
+RUN mkdir /app
 WORKDIR /app
 RUN git clone https://github.com/axiom88-guru/rails-docker.git /app
 RUN bundle install --without development test

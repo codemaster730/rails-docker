@@ -5,15 +5,12 @@ MAINTAINER axiom88guru(axiom88guru@gmail.com)
 RUN apt-get update
 
 # Install basic packages
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs git
 
 # Install Ruby
 RUN apt-get -qq -y install ruby-full
 RUN gem install bundler --no-ri --no-rdoc
 RUN gem install foreman
-
-# Install Git
-RUN apt-get install git
 
 # Install rails-new-docker
 WORKDIR /app

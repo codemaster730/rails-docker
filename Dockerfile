@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER stardust(axiom88guru@gmail.com)
+MAINTAINER axiom88guru(axiom88guru@gmail.com)
 # Configuration for app below.
 # Run upgrades
 RUN apt-get update

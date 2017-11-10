@@ -18,7 +18,7 @@ gem 'jbuilder', '~> 2.5'
 # Use for static pages
 gem 'high_voltage', '~> 3.0.0'
 # Use rails_12factor for stdout logs g
-em 'rails_12factor'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

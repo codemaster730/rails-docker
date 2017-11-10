@@ -12,8 +12,10 @@ RUN apt-get -qq -y install ruby-full
 RUN gem install bundler --no-ri --no-rdoc
 RUN gem install foreman
 
+# Install Git
+RUN apt-get install git
+
 # Install rails-new-docker
-RUN mkdir /app
 WORKDIR /app
 RUN git clone https://github.com/axiom88-guru/rails-docker.git /app
 RUN bundle install --without development test

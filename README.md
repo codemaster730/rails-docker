@@ -9,7 +9,7 @@
 | Database                      | MySQL 5.7.22                                 |
 | API Document                  | Swagger(OpenAPI 2.0)                         |
 | Required Middleware           | Docker version 18.03.0-ce                    |
-| Bug report / feature requests | [GitHub Issue](https://github.com/ujway/rails-docker-boilerplate/issues) |
+
 
 ## Getting Started
 
